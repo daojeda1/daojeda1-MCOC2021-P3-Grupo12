@@ -30,3 +30,6 @@ Ruta 0 - 4
 
 ![WhatsApp Image 2021-11-12 at 16 33 04](https://user-images.githubusercontent.com/88356329/141525857-e91a6b50-ac5a-4dcc-9554-9892f811f983.jpeg)
 
+# Entrega P3 - E3 - Ojeda
+![OJEDA](https://user-images.githubusercontent.com/53507891/141601381-f8be46c9-a2f4-41db-ae6f-b113b7981481.jpeg)
+(Problemas para graficar calles)
