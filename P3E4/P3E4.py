@@ -67,9 +67,9 @@ OD = {("A","C") : 1100., ("A","D") : 1110., ("A","E") : 1020., ("B","C") : 1140.
 
 OD_target = OD.copy()
 
-inc = [0.05]*18 + [0.01]*9 + [0.001]*9 + [0.0001]*9 + [0.00001]*9 + [0.000001]*10
+inc = [0.05]*18 + [0.01]*9 + [0.001]*9 + [0.0001]*9 + [0.00001]*9 + [0.000001]*10 #[0.01]*9 + [0.001]*9 + [0.0001]*9 + [0.00001]*9 + [0.000001]*10
 
-
+#Usando el incremento iterando en inc
 for INC in inc:
     for key in OD:
     
@@ -79,10 +79,8 @@ for INC in inc:
     	demanda_objetivo = OD_target[key]
         
     	if demanda_actual > 0.:
-    		#Ruta mínima
     		path = nx.dijkstra_path(G, origen, destino, weight="costo")
-    
-    		#Incrementar flujo en la ruta mínima
+   
     		Nparadas = len(path)
     		for i_parada in range(Nparadas-1):
     			o = path[i_parada]
