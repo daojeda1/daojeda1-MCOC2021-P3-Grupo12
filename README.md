@@ -186,3 +186,26 @@ print(tabla)
 ```
 
 ['S', 0.0008053756137709929, 'RT', 0.0005369098689390497, 'RUV', 0.005743284939029171, 'RU', 0.002821679275386186, 'SW', 0.1364904469735797, 'SXZ', 0.1363597810414069, 'RTW', 0.13583712072279772, 'RTXZ', 0.1357064564956407, 'RUYZ', 0.0003299774625268164, 'RUVXZ', 0.00041247148789864475, 'RUVW', 0.00032997746253853955, 'T', 0.02147359379538938, 'UV', 0.0034757911148826067, 'U', 0.011799410029504562, 'W', 0.010917668087657796, 'XZ', 0.010663741754635723, 'X', 0.015984214210519522, 'V', 0.016072804260957755, 'YZ', 0.014975116927792367, 'VXZ', 0.015149219815175145, 'VW', 0.01497511692780474, 'Y', 0.011883147210087512, 'VX', 0.011606762873827073]
+
+
+# P3 - E5
+
+Se adjunta a continuacion el mapa obtenido, a partir de la matriz OD y el grafo adjunto:
+
+
+![WhatsApp Image 2021-11-19 at 18 32 46](https://user-images.githubusercontent.com/88356329/142696660-ef892e3a-c030-470b-9f84-bb4f22ad2a48.jpeg)
+
+Se responden las siguientes preguntas dadas por enunciado.
+
+1.- ¿Cómo seleccionó las zonas a incluir?
+Para la seleccion de las zonas a incluir dentro del mapa se realizo en base a 2 criterios principalmente, primero se creo la lista en base la matriz OD y observando las zonas presentes dentro de AOV. El criterio numero 1 fue ver si dentro de la matriz OD se encuentra algun viaje que ya sea el origen este presente dentro de AOD o sea el destino y como segundo criterio para la seleccion fue buscar que el viaje sea de importancia dentro de AOV es decir con un flujo mayor o igual a 100. De esta manera al cumplirse ambas condiciones el programa automaticamente selecciona aquella(s) zona.
+
+2.- ¿Cuántas zonas quedaron seleccionadas son?
+Al final despues de la seleccion quedaron 128 zonas elegidas. Este valor se obtiene al realizar un print(len(lista_zonas)), que son las zonas luego del filtro.
+
+3.- ¿Cuántos viajes deberá asignar?
+Estos son 204 finalmente y se obtienen al realizar la seleccion se obtiene una lista con todos los pares OD a graficar los cuales se obtienen de print(len(listazonasfinales)). 
+
+4.- ¿Cuales son los pares OD que espera Ud. que generen mayor flujo en AVO?
+
+
