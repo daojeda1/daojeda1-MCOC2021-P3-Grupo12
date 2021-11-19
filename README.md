@@ -193,19 +193,41 @@ print(tabla)
 Se adjunta a continuacion el mapa obtenido, a partir de la matriz OD y el grafo adjunto:
 
 
-![WhatsApp Image 2021-11-19 at 18 32 46](https://user-images.githubusercontent.com/88356329/142696660-ef892e3a-c030-470b-9f84-bb4f22ad2a48.jpeg)
+![image](https://user-images.githubusercontent.com/53507891/142700327-0cf5884a-70ec-4b98-8d5c-6fdfcfda3cda.png)
+
 
 Se responden las siguientes preguntas dadas por enunciado.
 
 1.- ¿Cómo seleccionó las zonas a incluir?
+
 Para la seleccion de las zonas a incluir dentro del mapa se realizo en base a 2 criterios principalmente, primero se creo la lista en base la matriz OD y observando las zonas presentes dentro de AOV. El criterio numero 1 fue ver si dentro de la matriz OD se encuentra algun viaje que ya sea el origen este presente dentro de AOD o sea el destino y como segundo criterio para la seleccion fue buscar que el viaje sea de importancia dentro de AOV es decir con un flujo mayor o igual a 100. De esta manera al cumplirse ambas condiciones el programa automaticamente selecciona aquella(s) zona.
 
 2.- ¿Cuántas zonas quedaron seleccionadas son?
-Al final despues de la seleccion quedaron 128 zonas elegidas. Este valor se obtiene al realizar un print(len(lista_zonas)), que son las zonas luego del filtro.
+
+Al final despues de la seleccion quedaron 158 zonas elegidas. Este valor se obtiene al realizar un print(len(lista_zonas)), que son las zonas luego del filtro.
 
 3.- ¿Cuántos viajes deberá asignar?
-Estos son 204 finalmente y se obtienen al realizar la seleccion se obtiene una lista con todos los pares OD a graficar los cuales se obtienen de print(len(listazonasfinales)). 
+
+Estos son 80659 finalmente y se obtienen al realizar la suma de todos los viajes / hora de todos los pares OD utilizados para el grafo.
 
 4.- ¿Cuales son los pares OD que espera Ud. que generen mayor flujo en AVO?
 
+A continuación, se muestran las zonas con mas incidencia en cuanto a la demanda, para su obtención se generó un orden de mayor a menor en todos los pares OD que tienen relacion con la autopista AVO
 
+```
+[683, 683, 4852.3324215]
+[307, 307, 4074.92268173]
+[289, 666, 2841.6582835000004]
+[677, 672, 2123.202268]
+[683, 288, 1943.1120744]
+[289, 300, 1777.3140749000002]
+[471, 304, 1379.590969]
+[471, 307, 1377.864682]
+[292, 288, 1251.12831577]
+[667, 682, 1181.0101065]
+[500, 307, 1170.159221]
+[682, 291, 1110.866019]
+[672, 677, 1058.616379]
+[430, 153, 1025.51663]
+
+```
