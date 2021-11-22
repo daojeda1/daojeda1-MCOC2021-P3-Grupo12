@@ -76,7 +76,7 @@ G.add_edge("G","E", fcosto=f1, flujo =0,costo =10, label = "z")
 plt.figure(1)
 ax1 = plt.subplot(111)
 pos=nx.get_node_attributes(G, "pos")
-nx.draw(G,pos = pos ,with_labels=True,font_weight="bold")##PQ CHUCHA ME TIRA ERROR
+nx.draw(G,pos = pos ,with_labels=True,font_weight="bold")
 labels = nx.get_edge_attributes(G,'label')
 nx.draw_networkx_edge_labels(G,pos,edge_labels=labels)
 plt.show()
